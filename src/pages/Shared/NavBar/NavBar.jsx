@@ -2,27 +2,22 @@ const NavBar = () => {
   const navOptions = (
     <>
       <li>
-        <a>Item 1</a>
+        <a>Home</a>
       </li>
       <li>
-        <a>Parent</a>
-        <ul className="p-2">
-          <li>
-            <a>Submenu 1</a>
-          </li>
-          <li>
-            <a>Submenu 2</a>
-          </li>
-        </ul>
+        <a>Contact Us</a>
       </li>
       <li>
-        <a>Item 3</a>
+        <a>Dashboard</a>
+      </li>
+      <li>
+        <a>Login</a>
       </li>
     </>
   );
   return (
     <>
-      <div className="navbar bg-base-100">
+      <div className="navbar z-10 bg-opacity-30 max-w-screen-xl fixed bg-black text-white">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -54,7 +49,7 @@ const NavBar = () => {
           <ul className="menu menu-horizontal px-1">{navOptions}</ul>
         </div>
         <div className="navbar-end">
-          <a className="btn">Button</a>
+          <a className="btn btn-outline btn-primary">Get Started</a>
         </div>
       </div>
     </>
